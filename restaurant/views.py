@@ -15,7 +15,7 @@ def index(request):
 
 class MenuItemsView(generics.ListCreateAPIView):
     #It handles the POST and GET method calls
-    permission_classes = [IsAuthenticated]
+    #permission_classes = [IsAuthenticated]
     queryset = Menu.objects.all()
     serializer_class = MenuSerializer
 
